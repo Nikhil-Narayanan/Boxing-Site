@@ -1,0 +1,100 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WhnGFucE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGF.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+html {
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    width: 100%;
+    font-family: 'Righteous';
+}
+
+* {
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.header li {
+    list-style: none;
+    padding: 0px 20px;
+    display: inline-block;
+}
+
+.header li a {
+    text-decoration: underline;
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
+.header li:hover {
+    transform: scale(1.1);
+    color: peachpuff;
+}
+
+
+#BSMLogo {
+    padding-left: 10px;
+    height: 200px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .header li {
+        padding: none;
+        font-size: 16px;
+    }
+    #BSMLogo {
+        padding-left: 9px;
+        height: 100px;
+    }
+}
+
+.LogoBar {
+    justify-content: center;
+    background-image: url(Boxing-Background.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: auto;
+    margin-top: 69px;
+}
+
+.textbox {
+    background-color: black;
+    background-size: cover;
+    flex-basis: 0 1 700px;
+}
